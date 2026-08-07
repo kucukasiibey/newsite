@@ -5,9 +5,6 @@ from flask_cors import CORS
 from PyCharacterAI import get_client
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
-@app.route("/test123")
-def test123():
-    return "BURAYA GELDİ"
 CORS(app)
 
 token = os.environ.get("CAI_TOKEN")
